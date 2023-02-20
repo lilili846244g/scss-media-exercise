@@ -10,7 +10,7 @@ $colors: (
   @return map-get($colors, $color-name);
 }
 
-/**************  desktop  media**************************/
+/**************   breakpoint ( media ) **************************/
 
 $desktop: 840px;
 @mixin desktop {
@@ -25,7 +25,7 @@ $desktop: 840px;
   }
 }
 
-/****************************************/
+/*************** variables *************************/
 
 $padding: 15px;
 $borders: 15px;
