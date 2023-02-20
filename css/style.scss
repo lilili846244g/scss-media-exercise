@@ -1,0 +1,141 @@
+@import "_button";
+@import "_fontsize";
+@import "_breakpoint2method.scss";
+@import url(" https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,300&family=Clicker+Script&family=Inter:wght@200;300;400&family=Luxurious+Roman&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:ital,wght@0,300;0,400;0,600;1,400;1,500;1,700&family=Noto+Sans+Chakma&family=Noto+Serif+Display:wght@300&family=Open+Sans:ital,wght@1,300&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400;1,400;1,500&family=Poppins:ital,wght@0,400;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto:ital@0;1&family=Space+Grotesk&display=swap");
+@import "_section-2.scss";
+@mixin flexCenter($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+$phone: 560px;
+@mixin phone {
+  @media (max-width: $phone) {
+    @content;
+  }
+}
+
+$color-1: hotpink;
+$border: 1px solid red;
+$textcolor: blue;
+$scetin-2bkg: rgb(124, 121, 122);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Merriweather", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  @include flexCenter(space-between, center, row);
+  width: 100%;
+  height: 10vh;
+  padding: 10px 20px;
+  background-color: black;
+  .logo {
+    color: aliceblue;
+    h1 {
+      text-transform: uppercase;
+      padding: 0 20px;
+    }
+  }
+  nav {
+    width: 40%;
+    @include phone {
+      width: 60%;
+    }
+    ul {
+      @include flexCenter(space-around, center, row);
+      li {
+        color: $textcolor;
+        list-style: none;
+        a {
+          font-size: 18px;
+          padding: 10px;
+          text-decoration: none;
+          text-transform: capitalize;
+          color: aliceblue;
+          @include phone {
+            font-size: 10px;
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.main {
+  width: 100%;
+  height: 100vh -10vh;
+  .hero {
+    width: 100%;
+    height: 100vh;
+    padding: 10rem;
+    @include flexCenter(center, center, row);
+    @media (min-width: 100px) and (max-width: 999px) {
+      flex-direction: column-reverse;
+      padding: 1rem;
+      height: auto;
+    }
+    .le {
+      width: 50%;
+      height: 100%;
+      padding: 5rem;
+      @media (min-width: 100px) and (max-width: 999px) {
+        padding: 2rem 1rem;
+        width: 100%;
+      }
+      .hero-main {
+        width: 100%;
+        height: 100%;
+        @include flexCenter(center, start, column);
+        gap: 2rem;
+        h1 {
+          font-size: 5rem;
+          text-transform: uppercase;
+        }
+        p {
+          font-size: 24px;
+          color: rgb(56, 55, 55);
+          text-align: start;
+        }
+      }
+    }
+    .rg {
+      width: 50%;
+      height: 80vh;
+      padding: 5rem;
+      @media (min-width: 100px) and (max-width: 999px) {
+        padding: 1rem;
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        -webkit-clip-path: polygon(
+          51% 0,
+          100% 25%,
+          100% 75%,
+          50% 100%,
+          0% 75%,
+          0 33%
+        );
+        clip-path: polygon(51% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0 33%);
+      }
+    }
+  }
+}
