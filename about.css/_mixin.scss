@@ -1,37 +1,72 @@
 @mixin n-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin d-flex($justify, $direction) {
-    display: flex;
-    justify-content: $justify;
-    align-items: center;
-    flex-direction: $direction;
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+  flex-direction: $direction;
 }
 
 @mixin h1-title($size, $weight) {
-    text-shadow: 1px 1px 2px rgb(139, 136, 136), 0 0 1em rgb(28, 77, 151), 0 0 0.2em rgb(36, 176, 241);
-    font-size: $size;
-    font-weight: $weight;
-    color: aliceblue;
+  text-shadow: 1px 1px 2px rgb(139, 136, 136), 0 0 1em rgb(19, 191, 197),
+    0 0 0.2em rgb(36, 176, 241);
+  font-size: $size;
+  font-weight: $weight;
+  color: aliceblue;
 }
 
 @mixin card {
-    width: 24vw;
-    height: 400px;
-    background-color: c.$bkg;
+  width: 26vw;
+  height: 400px;
+  background-color: c.$bkg;
+  border-radius: c.$r15;
+}
+
+@mixin center-card {
+  width: 20%;
+  height: 200px;
+  background-color: c.$bkg;
+  margin-inline: auto;
+  border-radius: c.$r15;
+  position: relative;
 }
 
 @mixin box-left {
-    padding: 1rem;
-    align-self: start;
-    justify-self: start;
+  padding: 1rem;
+  align-self: start;
+  justify-self: start;
+  /*   border: c.$border; */
 }
 
 @mixin box-right {
-    padding: 1rem;
-    align-self: flex-end;
-    justify-self: end;
+  padding: 1rem;
+  align-self: flex-end;
+  justify-self: end;
+  /*   border: c.$border; */
+}
+
+@mixin ball($hh) {
+  width: 15px;
+  height: 15px;
+  border-radius: c.$r100;
+  background-color: c.$bkg;
+  position: absolute;
+  right: 49.4%;
+  top: $hh;
+  box-shadow: 1px 1px 2px rgb(139, 136, 136), 0 0 1em rgb(28, 77, 151);
+}
+
+@mixin line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  text-align: center;
+  transform: translateX(-50%);
+  background-color: c.$bkg;
 }
