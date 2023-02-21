@@ -1,0 +1,37 @@
+@mixin n-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin d-flex($justify, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin h1-title($size, $weight) {
+    text-shadow: 1px 1px 2px rgb(139, 136, 136), 0 0 1em rgb(28, 77, 151), 0 0 0.2em rgb(36, 176, 241);
+    font-size: $size;
+    font-weight: $weight;
+    color: aliceblue;
+}
+
+@mixin card {
+    width: 24vw;
+    height: 350px;
+    background-color: c.$bkg;
+}
+
+@mixin box-left {
+    padding: 1rem;
+    align-self: start;
+    justify-self: start;
+}
+
+@mixin box-right {
+    padding: 1rem;
+    align-self: flex-end;
+    justify-self: end;
+}

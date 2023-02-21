@@ -1,0 +1,348 @@
+/******** font- weight *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  min-width: 1440px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+@media (max-width: 0) {
+  body {
+    background-color: red;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    background-color: blue;
+  }
+}
+@media (max-width: 720px) {
+  body {
+    background-color: green;
+  }
+}
+@media (max-width: 960px) {
+  body {
+    background-color: purple;
+  }
+}
+@media (max-width: 1200px) {
+  body {
+    background-color: orange;
+  }
+}
+@media (max-width: 1400px) {
+  body {
+    background-color: pink;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7vh;
+  background-color: #fff;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+header .logo {
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+header .logo h1 {
+  text-transform: capitalize;
+  color: rgb(9, 93, 126);
+}
+header nav {
+  padding: 0 10px;
+}
+@media (max-width: 1200px) {
+  header nav {
+    display: none;
+  }
+}
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+header nav ul li a {
+  font-size: 1.2rem;
+  color: rgb(49, 48, 48);
+  padding: 0 10px;
+}
+@media (max-width: 1550px) {
+  header nav ul li a {
+    font-size: 0.8rem;
+  }
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.hero .video-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.hero .video-bg iframe {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.hero .hero-text {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.hero .hero-text .text-box {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero-text .text-box .main-title {
+  padding-top: 100px;
+}
+.hero .hero-text .text-box .main-title h3 {
+  color: #fff;
+  text-shadow: 1px 1px 2px rgb(139, 136, 136), 0 0 1em rgb(28, 77, 151), 0 0 0.2em rgb(36, 176, 241);
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: aliceblue;
+  align-self: start;
+  letter-spacing: 10px;
+}
+.hero .hero-text .text-box .main-title h1 {
+  text-shadow: 1px 1px 2px rgb(139, 136, 136), 0 0 1em rgb(28, 77, 151), 0 0 0.2em rgb(36, 176, 241);
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: aliceblue;
+  padding-left: 100px;
+}
+.hero .hero-text .text-box .main-title h1 .sm {
+  text-shadow: 1px 1px 2px rgb(139, 136, 136), 0 0 1em rgb(28, 77, 151), 0 0 0.2em rgb(36, 176, 241);
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: aliceblue;
+  padding-left: 100px;
+}
+.hero .hero-text .text-box .main-title h1 .bold {
+  text-shadow: 1px 1px 2px rgb(139, 136, 136), 0 0 1em rgb(28, 77, 151), 0 0 0.2em rgb(36, 176, 241);
+  font-size: 5rem;
+  font-weight: bold;
+  color: aliceblue;
+  padding-left: 200px;
+}
+.hero .hero-text .scroll-down {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero-text .scroll-down .scroll-text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.hero .hero-text .scroll-down .scroll-text i {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.hero .hero-text .scroll-down .scroll-text svg {
+  width: 30px;
+  height: 30px;
+}
+.hero .hero-text .scroll-down .scroll-text .line {
+  width: 2px;
+  height: 80px;
+  background-color: #fff;
+}
+.hero .scrool-part {
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  border: 1px solid red;
+  position: absolute;
+  top: 100vh;
+}
+.hero .scrool-part .box-container {
+  width: 70%;
+  height: auto;
+  margin-inline: auto;
+  position: relative;
+}
+.hero .scrool-part .box-container .center-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  text-align: center;
+  transform: translateX(-50%);
+  background-color: #aa0b6d;
+}
+.hero .scrool-part .box-container .outside-box {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .scrool-part .box-container .outside-box .center-box {
+  width: 20%;
+  height: 200px;
+  background-color: #fff;
+  margin-inline: auto;
+  position: relative;
+}
+.hero .scrool-part .box-container .outside-box .center-box .title-h1 {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.hero .scrool-part .box-container .big-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.hero .scrool-part .box-container .big-box .flex-box {
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+.hero .scrool-part .box-container .big-box .flex-box .box-left {
+  padding: 1rem;
+  align-self: start;
+  justify-self: start;
+  border: 1px solid red;
+}
+.hero .scrool-part .box-container .big-box .flex-box .box-left .card-trip {
+  width: 24vw;
+  height: 350px;
+  background-color: #fff;
+}
+.hero .scrool-part .box-container .big-box .flex-box .box-left .card-trip .content {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+.hero .scrool-part .box-container .big-box .flex-box .box-left .card-trip .content h1 {
+  color: rgb(9, 93, 126);
+  line-height: 50px;
+}
+.hero .scrool-part .box-container .big-box .flex-box .box-left .card-trip .content p {
+  font-size: 0.8rem;
+}
+.hero .scrool-part .box-container .big-box .flex-box .box-left .card-trip .content img {
+  width: 100%;
+  height: 60%;
+  padding-top: 10px;
+}
+.hero .scrool-part .box-container .big-box .flex-box .box-left .card-trip .content a {
+  font-size: 0.8rem;
+  color: rgb(49, 48, 48);
+  text-transform: uppercase;
+  line-height: 30px;
+  font-weight: 700;
+}
+.hero .scrool-part .box-container .big-box .flex-box .box-left .card-trip .content a:hover {
+  color: rgb(9, 93, 126);
+}
+.hero .scrool-part .box-container .big-box .flex-box .box-right {
+  padding: 1rem;
+  align-self: flex-end;
+  justify-self: end;
+  border: 1px solid red;
+}
+.hero .scrool-part .box-container .big-box .flex-box .box-right .card-trip {
+  width: 24vw;
+  height: 350px;
+  background-color: #fff;
+}
+.hero .scrool-part .box-container .big-box .flex-box .box-right .card-trip .content {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+.hero .scrool-part .box-container .big-box .flex-box .box-right .card-trip .content h1 {
+  color: rgb(9, 93, 126);
+  line-height: 50px;
+}
+.hero .scrool-part .box-container .big-box .flex-box .box-right .card-trip .content p {
+  font-size: 0.8rem;
+}
+.hero .scrool-part .box-container .big-box .flex-box .box-right .card-trip .content img {
+  width: 100%;
+  height: 60%;
+  padding-top: 10px;
+}
+.hero .scrool-part .box-container .big-box .flex-box .box-right .card-trip .content a {
+  font-size: 0.8rem;
+  color: rgb(49, 48, 48);
+  text-transform: uppercase;
+  line-height: 30px;
+  font-weight: 700;
+}
+.hero .scrool-part .box-container .big-box .flex-box .box-right .card-trip .content a:hover {
+  color: rgb(9, 93, 126);
+}
+.hero .scrool-part .sacle-part {
+  height: 100vh;
+  background: #cc2626;
+}
+.hero .scrool-part .horizontal-silde {
+  height: 100vh;
+  background: #3726cc;
+}
+.hero .scrool-part .trip-best {
+  height: 50vh;
+  background: #ccc926;
+}
+.hero .scrool-part .place {
+  height: 100vh;
+  border: 1px solid red;
+  background: pink;
+}/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,258 @@
+@use "color.scss" as c;
+@use "fontsize.scss" as f;
+@import "base.scss";
+@import "mixin.scss";
+@import "rwd.scss";
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7vh;
+    background-color: c.$bkg;
+    z-index: 1000;
+    @include d-flex(space-between, row);
+    .logo {
+        padding: 10px 15px;
+        text-transform: uppercase;
+        h1 {
+            text-transform: capitalize;
+            color: c.$main;
+        }
+    }
+    nav {
+        padding: 0 10px;
+        @include xl {
+            display: none;
+        }
+        ul {
+            width: 100%;
+            @include d-flex(space-between, row);
+            li {
+                a {
+                    font-size: f.$sm;
+                    color: c.$text;
+                    padding: 0 10px;
+                    @include breakpoint(1550px) {
+                        font-size: f.$xs;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .video-bg {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        iframe {
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    }
+    .hero-text {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        .text-box {
+            width: 100%;
+            height: 80%;
+            @include n-flex;
+            .main-title {
+                padding-top: 100px;
+                h3 {
+                    color: c.$title;
+                    @include h1-title(f.$lg, f.$fl);
+                    align-self: start;
+                    letter-spacing: 10px;
+                }
+                h1 {
+                    @include h1-title(f.$xl, f.$fb);
+                    padding-left: 100px;
+                    .sm {
+                        @include h1-title(f.$xl, f.$fl);
+                        padding-left: 100px;
+                    }
+                    .bold {
+                        @include h1-title(f.$xxl, f.$fb);
+                        padding-left: 200px;
+                    }
+                }
+            }
+        }
+        .scroll-down {
+            width: 100%;
+            height: 20%;
+            @include n-flex;
+            .scroll-text {
+                text-align: center;
+                @include d-flex(center, column);
+                gap: 15px;
+                i {
+                    font-size: f.$sm;
+                    font-weight: f.$fl;
+                    color: c.$title;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                }
+                svg {
+                    width: 30px;
+                    height: 30px;
+                }
+                .line {
+                    width: 2px;
+                    height: 80px;
+                    background-color: c.$bkg;
+                }
+            }
+        }
+    }
+    .scrool-part {
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        border: c.$border;
+        position: absolute;
+        top: 100vh;
+        .box-container {
+            width: 70%;
+            height: auto;
+            margin-inline: auto;
+            position: relative;
+            .center-line {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 2px;
+                height: 100%;
+                text-align: center;
+                transform: translateX(-50%);
+                background-color: #aa0b6d;
+            }
+            .outside-box {
+                width: 100%;
+                height: 80vh;
+                @include n-flex;
+                .center-box {
+                    width: 20%;
+                    height: 200px;
+                    background-color: c.$bkg;
+                    margin-inline: auto;
+                    position: relative;
+                    .title-h1 {
+                        padding: 3rem 1rem;
+                        text-align: center;
+                    }
+                }
+            }
+            .big-box {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-top: 50px;
+                .flex-box {
+                    height: 60vh;
+                    display: flex;
+                    justify-content: space-between;
+                    border: c.$border;
+                    .box-left {
+                        @include box-left;
+                        border: c.$border;
+                        .card-trip {
+                            @include card;
+                            .content {
+                                width: 100%;
+                                height: 100%;
+                                padding: 1rem;
+                                h1 {
+                                    color: c.$main;
+                                    line-height: 50px;
+                                }
+                                p {
+                                    font-size: f.$xs;
+                                }
+                                img {
+                                    width: 100%;
+                                    height: 60%;
+                                    padding-top: 10px;
+                                }
+                                a {
+                                    font-size: f.$xs;
+                                    color: c.$text;
+                                    text-transform: uppercase;
+                                    line-height: 30px;
+                                    font-weight: f.$fsb;
+                                    &:hover {
+                                        color: c.$main;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .box-right {
+                        @include box-right;
+                        border: c.$border;
+                        .card-trip {
+                            @include card;
+                            .content {
+                                width: 100%;
+                                height: 100%;
+                                padding: 1rem;
+                                h1 {
+                                    color: c.$main;
+                                    line-height: 50px;
+                                }
+                                p {
+                                    font-size: f.$xs;
+                                }
+                                img {
+                                    width: 100%;
+                                    height: 60%;
+                                    padding-top: 10px;
+                                }
+                                a {
+                                    font-size: f.$xs;
+                                    color: c.$text;
+                                    text-transform: uppercase;
+                                    line-height: 30px;
+                                    font-weight: f.$fsb;
+                                    &:hover {
+                                        color: c.$main;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .sacle-part {
+            height: 100vh;
+            background: #cc2626;
+        }
+        .horizontal-silde {
+            height: 100vh;
+            background: #3726cc;
+        }
+        .trip-best {
+            height: 50vh;
+            background: #ccc926;
+        }
+        .place {
+            height: 100vh;
+            border: c.$border;
+            background: pink;
+        }
+    }
+}

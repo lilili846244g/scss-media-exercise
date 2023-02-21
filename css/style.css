@@ -148,7 +148,8 @@ header a {
   }
 }
 
-/* (in _section-2 file)
+/**** section-2 have no.1 ,so need to import  *****/
+/*  1. (in _section-2 file)
 @mixin breakpoint($bp: 0) {
     @media (min-width: $bp) {
       @content;
@@ -321,6 +322,10 @@ header a {
   }
 }
 
+/************************************/
+/************************************/
+/************************************/
+/************************************/
 * {
   padding: 0;
   margin: 0;
