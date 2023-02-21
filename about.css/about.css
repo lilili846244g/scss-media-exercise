@@ -261,7 +261,7 @@ header nav ul li a {
 }
 .hero .scrool-part .box-container .big-box .flex-box .box-left .card-trip {
   width: 24vw;
-  height: 350px;
+  height: 400px;
   background-color: #fff;
 }
 .hero .scrool-part .box-container .big-box .flex-box .box-left .card-trip .content {
@@ -280,6 +280,8 @@ header nav ul li a {
   width: 100%;
   height: 60%;
   padding-top: 10px;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .hero .scrool-part .box-container .big-box .flex-box .box-left .card-trip .content a {
   font-size: 0.8rem;
@@ -299,7 +301,7 @@ header nav ul li a {
 }
 .hero .scrool-part .box-container .big-box .flex-box .box-right .card-trip {
   width: 24vw;
-  height: 350px;
+  height: 400px;
   background-color: #fff;
 }
 .hero .scrool-part .box-container .big-box .flex-box .box-right .card-trip .content {
@@ -318,6 +320,8 @@ header nav ul li a {
   width: 100%;
   height: 60%;
   padding-top: 10px;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .hero .scrool-part .box-container .big-box .flex-box .box-right .card-trip .content a {
   font-size: 0.8rem;
@@ -331,7 +335,7 @@ header nav ul li a {
 }
 .hero .scrool-part .sacle-part {
   height: 100vh;
-  background: #cc2626;
+  background: #f0ebeb;
 }
 .hero .scrool-part .horizontal-silde {
   height: 100vh;
