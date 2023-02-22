@@ -3,6 +3,8 @@
 @import "base.scss";
 @import "mixin.scss";
 @import "rwd.scss";
+@import "img-wrapper.scss";
+@import "silder-wrapper.scss";
 header {
   position: fixed;
   top: 0;
@@ -10,7 +12,7 @@ header {
   width: 100%;
   height: 7vh;
   background-color: c.$bkg;
-  z-index: 1000;
+  z-index: 10000;
   @include d-flex(space-between, row);
   .logo {
     padding: 10px 15px;
@@ -49,8 +51,8 @@ header {
   .video-bg {
     position: fixed;
     width: 100%;
-    height: 100%;
-    top: 0;
+    height: 93vh;
+    top: 7vh;
     left: 0;
     iframe {
       width: 100%;
@@ -61,8 +63,8 @@ header {
   .hero-text {
     position: fixed;
     width: 100%;
-    height: 100vh;
-    top: 0;
+    height: 93vh;
+    top: 7vh;
     left: 0;
     .text-box {
       width: 100%;
@@ -71,20 +73,19 @@ header {
       .main-title {
         padding-top: 100px;
         h3 {
-          color: c.$title;
-          @include h1-title(f.$lg, f.$fl);
+          @include h1-title(f.$lg, f.$fl, c.$title);
           align-self: start;
           letter-spacing: 10px;
         }
         h1 {
-          @include h1-title(f.$xl, f.$fb);
+          @include h1-title(f.$xl, f.$fb, c.$title);
           padding-left: 100px;
           .sm {
-            @include h1-title(f.$xl, f.$fl);
+            @include h1-title(f.$xl, f.$fl, c.$title);
             padding-left: 100px;
           }
           .bold {
-            @include h1-title(f.$xxl, f.$fb);
+            @include h1-title(f.$xxl, f.$fb, c.$title);
             padding-left: 200px;
           }
         }
@@ -126,6 +127,7 @@ header {
     .box-container {
       width: 70%;
       height: auto;
+      padding-bottom: 5rem;
       margin-inline: auto;
       position: relative;
       .center-line {
@@ -246,13 +248,145 @@ header {
         }
       }
     }
-    .sacle-part {
+    .guidelinr-part {
+      width: 100%;
       height: 100vh;
-      background: #f0ebeb;
+      padding: 15rem 0;
+      position: relative;
+      background-color: c.$main;
+      .center-line {
+        @include line;
+      }
+      .guidelinr {
+        width: 80%;
+        height: 55vh;
+        margin-inline: auto;
+        border-radius: c.$r15;
+        background-color: c.$bkg;
+        @include n-flex;
+        .guidelinr-text {
+          width: 50%;
+          padding: 0 2rem;
+          margin-left: 60px;
+          h1 {
+            color: c.$main;
+            margin-bottom: 1rem;
+          }
+          p {
+            line-height: 30px;
+          }
+        }
+        .guidelinr-img {
+          width: 70%;
+          height: 50vh;
+          position: relative;
+          img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            bottom: 127px;
+            left: 69px;
+            border-radius: c.$r15;
+            @include box-shadow;
+          }
+        }
+      }
+      svg {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 50%;
+        bottom: 0px;
+        text-align: center;
+        transform: translateX(-50%);
+      }
+    }
+    .scale-part {
+      width: 100%;
+      height: 100vh;
+      background-color: c.$main;
+      position: relative;
+      #wrapper-1 {
+        z-index: 7;
+        transform: scale(1);
+        @extend.img-wrapper;
+      }
+      #wrapper-2 {
+        z-index: 6;
+        @extend.img-wrapper;
+      }
+      #wrapper-3 {
+        z-index: 5;
+        @extend.img-wrapper;
+      }
+      #wrapper-4 {
+        z-index: 4;
+        @extend.img-wrapper;
+      }
+      #wrapper-5 {
+        z-index: 3;
+        @extend.img-wrapper;
+      }
+      #wrapper-6 {
+        z-index: 2;
+        @extend.img-wrapper;
+      }
     }
     .horizontal-silde {
+      width: 100%;
       height: 100vh;
-      background: #3726cc;
+      background-color: aliceblue;
+      .silde-container {
+        position: relative;
+        .center-box {
+          @include center-card;
+          z-index: 100;
+          .title-h1 {
+            padding: 3rem 1rem;
+            text-align: center;
+          }
+        }
+        .silde-big-wrapper {
+          width: 100%;
+          height: 90vh;
+          position: absolute;
+          @include bkg-img;
+          top: 100px;
+          left: 0;
+          .silder-flexbox-box {
+            display: flex;
+            flex-wrap: wrap;
+            height: 45vh;
+            width: 100%;
+            margin-top: 23vh;
+            .silder-title {
+              width: 30%;
+              height: 100%;
+              padding: 2rem;
+              border: 10px solid c.$bkg;
+              border-radius: c.$r15;
+              p {
+                height: 100%;
+                border: 10px solid c.$bkg;
+                padding: 4rem;
+                font-size: f.$lg;
+                font-weight: f.$fb;
+                color: c.$bkg;
+                text-align: center;
+                border-radius: c.$r15;
+              }
+            }
+          }
+          .silde-out-wrapper {
+            width: 70%;
+            position: relative;
+            .silde-wrapper {
+              @extend .silde-wrapper;
+            }
+          }
+        }
+      }
     }
     .trip-best {
       height: 50vh;

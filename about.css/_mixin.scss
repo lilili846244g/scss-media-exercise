@@ -1,3 +1,4 @@
+@import "_color.scss";
 @mixin n-flex {
   display: flex;
   justify-content: center;
@@ -11,12 +12,25 @@
   flex-direction: $direction;
 }
 
-@mixin h1-title($size, $weight) {
-  text-shadow: 1px 1px 2px rgb(139, 136, 136), 0 0 1em rgb(19, 191, 197),
-    0 0 0.2em rgb(36, 176, 241);
+@mixin h1-title($size, $weight, $colr) {
+  text-shadow: 0 0 10px rgb(0 0 0 / 30%);
   font-size: $size;
   font-weight: $weight;
-  color: aliceblue;
+  color: $colr;
+}
+
+@mixin p-title($size, $weight, $colr) {
+  text-shadow: 1px 1px 1px rgb(145, 141, 141);
+  font-size: $size;
+  font-weight: $weight;
+  color: $colr;
+  /*   line-height: 80px;
+  z-index: 100; */
+}
+
+@mixin box-shadow {
+  box-shadow: 1px 1px 2px rgb(139, 136, 136), 0 0 1em rgb(19, 191, 197),
+    0 0 0.2em rgb(36, 176, 241);
 }
 
 @mixin card {
@@ -69,4 +83,11 @@
   text-align: center;
   transform: translateX(-50%);
   background-color: c.$bkg;
+}
+
+@mixin bkg-img {
+  background-image: url("/image/m-food-4.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

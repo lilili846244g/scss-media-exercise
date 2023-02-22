@@ -1,0 +1,38 @@
+.img-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  border-radius: c.$r15;
+  @include box-shadow;
+  overflow: hidden;
+  @include n-flex;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .scale-main-title {
+    position: absolute;
+    top: 20%;
+    margin-inline: auto;
+    width: 60%;
+    height: 40vh;
+    @include d-flex(center, column);
+    h1 {
+      margin-bottom: 1rem;
+      margin-right: 100px;
+      @include h1-title(f.$lg, f.$fb, c.$title);
+      span {
+        margin-left: 100px;
+        @include h1-title(f.$xxl, f.$fsb, c.$title);
+      }
+    }
+    p {
+      color: c.$text;
+      @include p-title(f.$md, f.$fl, c.$title);
+      text-align: center;
+    }
+  }
+}

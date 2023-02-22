@@ -1,0 +1,51 @@
+$finalHeight: 23vw;
+$finalWidth: 4 * $finalHeight;
+$scrollBarHeight: 1px;
+::-webkit-scrollbar {
+  width: $scrollBarHeight;
+  height: $scrollBarHeight;
+}
+
+::-webkit-scrollbar-button {
+  width: $scrollBarHeight;
+  height: $scrollBarHeight;
+}
+
+.silde-wrapper {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: calc(#{$finalHeight} + #{$scrollBarHeight});
+  max-height: $finalWidth;
+  margin: 0;
+  padding-top: $scrollBarHeight;
+  background: transparent;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) translateY(-$finalHeight);
+  transform-origin: right top;
+  border-radius: c.$r15;
+  .silder-img-box {
+    display: block;
+    transform: rotate(90deg);
+    transform-origin: right top;
+    img {
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
+      object-fit: cover;
+      border: 10px solid c.$bkg;
+      border-radius: c.$r15;
+    }
+  }
+}
+
+.squares {
+  padding: $finalHeight 0 0 0;
+  & > div {
+    width: $finalHeight;
+    height: $finalHeight;
+    margin: 10px 0;
+  }
+}

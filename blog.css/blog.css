@@ -1,0 +1,41 @@
+/********* abstracts ******************/ /*********** colors **********************/
+/*********** Fonts **********************/
+/*********** Grid **********************/
+/********* base ******************/
+* {
+  font-family: "Lato", sans-serif;
+}
+
+/******** components *******************/
+/********* layout ******************/
+/********** pages *****************/
+@media (min-width: 0) {
+  .home {
+    background-color: red;
+  }
+}
+@media (min-width: 480px) {
+  .home {
+    background-color: blue;
+  }
+}
+@media (min-width: 720px) {
+  .home {
+    background-color: green;
+  }
+}
+@media (min-width: 960px) {
+  .home {
+    background-color: purple;
+  }
+}
+@media (min-width: 1200px) {
+  .home {
+    background-color: orange;
+  }
+}
+@media (min-width: 1400px) {
+  .home {
+    background-color: pink;
+  }
+}/*# sourceMappingURL=blog.css.map */
