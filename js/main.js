@@ -20,10 +20,22 @@ let wrapperAnimation = gsap.timeline({
 });
 /* ============== wrapper-1 ============= */
 wrapperAnimation.fromTo(
+  "#wrapper-1 .scale-main-title",
+  2,
+
+  {
+    opacity: 1,
+  },
+  {
+    opacity: 0,
+  }
+);
+wrapperAnimation.fromTo(
   "#wrapper-1",
   4,
 
   {
+    y: "2rem",
     scale: 0.7,
     ease: Power2.easeInOut,
   },
@@ -37,9 +49,21 @@ wrapperAnimation.fromTo(
 
 /* ============== wrapper-2 ============= */
 wrapperAnimation.fromTo(
+  "#wrapper-2 .scale-main-title",
+  2,
+
+  {
+    opacity: 1,
+  },
+  {
+    opacity: 0,
+  }
+);
+wrapperAnimation.fromTo(
   "#wrapper-2",
   4,
   {
+    y: "2rem",
     scale: 0.7,
     ease: Power2.easeInOut,
   },
@@ -52,9 +76,21 @@ wrapperAnimation.fromTo(
 );
 /* ============== wrapper-3 ============= */
 wrapperAnimation.fromTo(
+  "#wrapper-3 .scale-main-title",
+  2,
+
+  {
+    opacity: 1,
+  },
+  {
+    opacity: 0,
+  }
+);
+wrapperAnimation.fromTo(
   "#wrapper-3",
   4,
   {
+    y: "2rem",
     scale: 0.7,
     ease: Power2.easeInOut,
   },
@@ -68,9 +104,21 @@ wrapperAnimation.fromTo(
 
 /* ============== wrapper-4 ============= */
 wrapperAnimation.fromTo(
+  "#wrapper-4 .scale-main-title",
+  2,
+
+  {
+    opacity: 1,
+  },
+  {
+    opacity: 0,
+  }
+);
+wrapperAnimation.fromTo(
   "#wrapper-4",
   4,
   {
+    y: "2rem",
     scale: 0.7,
     ease: Power2.easeInOut,
   },
@@ -84,9 +132,21 @@ wrapperAnimation.fromTo(
 
 /* ============== wrapper-5 ============= */
 wrapperAnimation.fromTo(
+  "#wrapper-5 .scale-main-title",
+  2,
+
+  {
+    opacity: 1,
+  },
+  {
+    opacity: 0,
+  }
+);
+wrapperAnimation.fromTo(
   "#wrapper-5",
   4,
   {
+    y: "2rem",
     scale: 0.7,
     ease: Power2.easeInOut,
   },
@@ -100,9 +160,21 @@ wrapperAnimation.fromTo(
 
 /* ============== wrapper-6 ============= */
 wrapperAnimation.fromTo(
+  "#wrapper-6 .scale-main-title",
+  2,
+
+  {
+    opacity: 1,
+  },
+  {
+    opacity: 0,
+  }
+);
+wrapperAnimation.fromTo(
   "#wrapper-6",
   4,
   {
+    y: "2rem",
     scale: 0.7,
     ease: Power2.easeInOut,
   },
@@ -113,7 +185,8 @@ wrapperAnimation.fromTo(
     opacity: 0,
   }
 );
+
 wrapperAnimation.to(".scale-part", 0.5, {
   opacity: 0.5,
-  backgroundColor: "#fff",
+  backgroundColor: "rgb(93, 205, 240)",
 });

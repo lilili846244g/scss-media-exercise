@@ -141,6 +141,7 @@ html {
   display: block;
   transform: rotate(90deg);
   transform-origin: right top;
+  border-radius: 15px;
 }
 .silde-wrapper .silder-img-box img, .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silde-out-wrapper .silde-wrapper .silder-img-box img {
   width: 100%;
@@ -216,7 +217,7 @@ header nav ul li a {
 .hero .video-bg {
   position: fixed;
   width: 100%;
-  height: 93vh;
+  height: 100%;
   top: 7vh;
   left: 0;
 }
@@ -641,19 +642,32 @@ header nav ul li a {
 .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silder-flexbox-box .silder-title {
   width: 30%;
   height: 100%;
-  padding: 2rem;
+  padding: 6rem 0.3rem;
   border: 10px solid #fff;
   border-radius: 15px;
 }
-.hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silder-flexbox-box .silder-title p {
-  height: 100%;
-  border: 10px solid #fff;
-  padding: 4rem;
+.hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silder-flexbox-box .silder-title h1 {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(29, 46, 202);
+  text-shadow: 1px 3px 2px rgb(145, 141, 141);
+  padding-left: 100px;
+}
+.hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silder-flexbox-box .silder-title h1 .sm {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   font-size: 2.8rem;
-  font-weight: bold;
+  font-weight: 300;
   color: #fff;
-  text-align: center;
-  border-radius: 15px;
+  padding-left: 100px;
+}
+.hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silder-flexbox-box .silder-title h1 .bold {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: rgb(29, 46, 202);
+  padding-left: 150px;
+  text-shadow: 1px 3px 2px rgb(145, 141, 141);
 }
 .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silde-out-wrapper {
   width: 70%;
