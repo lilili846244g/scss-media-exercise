@@ -33,6 +33,7 @@
       width: 35%;
       height: 30vh;
       background-color: c.$bkg;
+      border-radius: c.$r15;
       padding: 2rem;
       z-index: 10;
       @include box-shadow;
@@ -96,6 +97,7 @@
       background: c.$bkg;
       padding: 2rem;
       z-index: 10;
+      border-radius: c.$r15;
       @include box-shadow;
       h4 {
         @include h1-title(1.5rem, f.$fsb, c.$main);

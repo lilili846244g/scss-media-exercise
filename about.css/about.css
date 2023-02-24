@@ -224,6 +224,7 @@ html {
   width: 35%;
   height: 30vh;
   background-color: #fff;
+  border-radius: 15px;
   padding: 2rem;
   z-index: 10;
   box-shadow: 1px 1px 2px rgb(139, 136, 136), 0 0 1em rgb(19, 191, 197), 0 0 0.2em rgb(36, 176, 241);
@@ -327,6 +328,7 @@ html {
   background: #fff;
   padding: 2rem;
   z-index: 10;
+  border-radius: 15px;
   box-shadow: 1px 1px 2px rgb(139, 136, 136), 0 0 1em rgb(19, 191, 197), 0 0 0.2em rgb(36, 176, 241);
 }
 .box-22 .h-text .left-text h4, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .h-text .left-text h4,
@@ -375,6 +377,12 @@ html {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.footer .footer-container h1, .hero .scrool-part footer .footer-container h1 {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 5rem;
+  font-weight: 300;
+  color: #fff;
 }
 .footer .footer-container ul, .hero .scrool-part footer .footer-container ul {
   margin-bottom: 10px;

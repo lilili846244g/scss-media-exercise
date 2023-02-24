@@ -190,3 +190,15 @@ wrapperAnimation.to(".scale-part", 0.5, {
   opacity: 0.5,
   backgroundColor: "rgb(93, 205, 240)",
 });
+
+const hotel = gsap.utils.toArray(".img-wrapper");
+let hotel = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".scale-part",
+    pin: true,
+    start: "top top",
+    end: "bottom bottom",
+    scrub: 4,
+    markers: true,
+  },
+});

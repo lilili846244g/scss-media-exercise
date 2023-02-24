@@ -8,6 +8,9 @@
     padding: 5rem 3rem;
     @include d-flex(space-between, row);
     flex-wrap: wrap;
+    h1 {
+      @include h1-title(f.$xxl, f.$fl, c.$title);
+    }
     ul {
       margin-bottom: 10px;
       li {
