@@ -1,0 +1,112 @@
+.box-11,
+.box-33,
+.box-55 {
+  @include n-flex;
+  padding: 4rem;
+  background-color: aliceblue;
+  position: relative;
+  .h-img {
+    width: 55vw;
+    height: 70vh;
+    padding-left: 100px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .h-text {
+    width: 50vw;
+    height: 100%;
+    .right-text {
+      position: absolute;
+      top: 70px;
+      left: 48%;
+      width: 35%;
+      height: 30vh;
+      background: c.$bkg;
+      padding: 2rem;
+      @include box-shadow;
+      h4 {
+        @include h1-title(1.5rem, f.$fsb, c.$main);
+        margin-bottom: 1rem;
+      }
+      p {
+        @include p-title(f.$sm, f.$fl, $text);
+        text-align: start;
+      }
+      a {
+        text-transform: capitalize;
+        float: right;
+        margin-top: 1rem;
+        @include h1-title(f.$sm, f.$fsb, c.$main);
+      }
+    }
+  }
+}
+
+.box-22,
+.box-44 {
+  @include n-flex;
+  margin: 5rem 0;
+  padding: 4rem;
+  background-color: aliceblue;
+  position: relative;
+  .h-left-img {
+    width: 55vw;
+    height: 70vh;
+    padding-right: 100px;
+    img {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .h-text {
+    width: 50vw;
+    height: 100%;
+    .left-text {
+      position: absolute;
+      top: 70px;
+      right: 48%;
+      width: 35%;
+      height: 30vh;
+      background: c.$bkg;
+      padding: 2rem;
+      @include box-shadow;
+      h4 {
+        @include h1-title(1.5rem, f.$fsb, c.$main);
+        margin-bottom: 1rem;
+      }
+      p {
+        @include p-title(f.$sm, f.$fl, $text);
+        text-align: start;
+      }
+      a {
+        text-transform: capitalize;
+        float: right;
+        margin-top: 1rem;
+        @include h1-title(f.$sm, f.$fsb, c.$main);
+      }
+      h4 {
+        @include h1-title(1.5rem, f.$fsb, c.$main);
+        margin-bottom: 1rem;
+      }
+      p {
+        @include p-title(f.$sm, f.$fl, $text);
+        text-align: start;
+      }
+      a {
+        text-transform: capitalize;
+        float: right;
+        margin-top: 1rem;
+        @include h1-title(f.$sm, f.$fsb, c.$main);
+      }
+    }
+  }
+}

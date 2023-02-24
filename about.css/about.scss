@@ -5,6 +5,7 @@
 @import "rwd.scss";
 @import "img-wrapper.scss";
 @import "silder-wrapper.scss";
+@import "_hotel.scss";
 header {
   position: fixed;
   top: 0;
@@ -350,8 +351,9 @@ header {
         .silde-big-wrapper {
           width: 100%;
           height: 90vh;
-          position: absolute;
+          padding: 1rem;
           @include bkg-img;
+          position: absolute;
           top: 100px;
           left: 0;
           .silder-flexbox-box {
@@ -360,24 +362,27 @@ header {
             height: 45vh;
             width: 100%;
             margin-top: 23vh;
+            padding: 0 4rem;
             .silder-title {
               width: 30%;
               height: 100%;
-              padding: 6rem 0.3rem;
+              padding: 6rem 0.2rem;
               border: 10px solid c.$bkg;
+              background: $bkglg;
               border-radius: c.$r15;
               h1 {
-                @include h1-title(f.$md, f.$fsb, c.$main);
-                text-shadow: 1px 3px 2px rgb(145, 141, 141);
+                @include h1-title(f.$md, f.$fsb, c.$title);
+                text-shadow: 1px 3px 2px rgb(14, 13, 13);
                 padding-left: 100px;
                 .sm {
                   @include h1-title(f.$lg, f.$fl, c.$title);
                   padding-left: 100px;
+                  text-shadow: 1px 3px 2px rgb(14, 13, 13);
                 }
                 .bold {
-                  @include h1-title(f.$xl, f.$fb, c.$main);
+                  @include h1-title(f.$xl, f.$fb, c.$title);
                   padding-left: 150px;
-                  text-shadow: 1px 3px 2px rgb(145, 141, 141);
+                  text-shadow: 1px 3px 2px rgb(14, 13, 13);
                 }
               }
             }
@@ -392,9 +397,50 @@ header {
         }
       }
     }
-    .trip-best {
-      height: 50vh;
-      background: #ccc926;
+    .hotel-best {
+      width: 100%;
+      height: auto;
+      background: c.$bkglg-2;
+      padding-top: 100px;
+      .hotel-container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .center-line {
+          @include line;
+        }
+        .center-box {
+          @include center-card;
+          padding: 3rem 4rem;
+          h1 {
+            text-align: center;
+          }
+        }
+        .hotel-out-box {
+          width: 80%;
+          margin-inline: auto;
+          margin-top: 10rem;
+          .hotel-in-box {
+            padding: 0 5rem;
+            position: relative;
+            .h-box-1 {
+              @extend .box-11;
+            }
+            .h-box-2 {
+              @extend .box-22;
+            }
+            .h-box-3 {
+              @extend .box-33;
+            }
+            .h-box-4 {
+              @extend .box-44;
+            }
+            .h-box-5 {
+              @extend .box-55;
+            }
+          }
+        }
+      }
     }
     .place {
       height: 100vh;

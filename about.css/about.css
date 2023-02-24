@@ -112,13 +112,13 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 1px;
-  height: 1px;
+  width: 30px;
+  height: 30px;
 }
 
 ::-webkit-scrollbar-button {
-  width: 1px;
-  height: 1px;
+  width: 30px;
+  height: 30px;
 }
 
 .silde-wrapper, .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silde-out-wrapper .silde-wrapper {
@@ -126,14 +126,14 @@ html {
   display: block;
   top: 0;
   left: 0;
-  width: calc(23vw + 1px);
-  max-height: 92vw;
+  width: calc(21vw + 30px);
+  max-height: 63vw;
   margin: 0;
-  padding-top: 1px;
+  padding-top: 30px;
   background: transparent;
   overflow-y: auto;
   overflow-x: hidden;
-  transform: rotate(-90deg) translateY(-23vw);
+  transform: rotate(-90deg) translateY(-21vw);
   transform-origin: right top;
   border-radius: 15px;
 }
@@ -142,11 +142,11 @@ html {
   transform: rotate(90deg);
   transform-origin: right top;
   border-radius: 15px;
+  padding: 0 1rem;
 }
 .silde-wrapper .silder-img-box img, .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silde-out-wrapper .silde-wrapper .silder-img-box img {
   width: 100%;
   height: 100%;
-  padding: 1rem;
   -o-object-fit: cover;
      object-fit: cover;
   border: 10px solid #fff;
@@ -154,12 +154,218 @@ html {
 }
 
 .squares {
-  padding: 23vw 0 0 0;
+  padding: 21vw 0 0 0;
 }
 .squares > div {
-  width: 23vw;
-  height: 23vw;
+  width: 21vw;
+  height: 21vw;
   margin: 10px 0;
+}
+
+.box-11, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-1,
+.box-33,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-3,
+.box-55,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  background-color: aliceblue;
+  position: relative;
+}
+.box-11 .h-img, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-1 .h-img,
+.box-33 .h-img,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-3 .h-img,
+.box-55 .h-img,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-5 .h-img {
+  width: 55vw;
+  height: 70vh;
+  padding-left: 100px;
+}
+.box-11 .h-img img, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-1 .h-img img,
+.box-33 .h-img img,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-3 .h-img img,
+.box-55 .h-img img,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-5 .h-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.box-11 .h-text, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-1 .h-text,
+.box-33 .h-text,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-3 .h-text,
+.box-55 .h-text,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-5 .h-text {
+  width: 50vw;
+  height: 100%;
+}
+.box-11 .h-text .right-text, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-1 .h-text .right-text,
+.box-33 .h-text .right-text,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-3 .h-text .right-text,
+.box-55 .h-text .right-text,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-5 .h-text .right-text {
+  position: absolute;
+  top: 70px;
+  left: 48%;
+  width: 35%;
+  height: 30vh;
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 1px 1px 2px rgb(139, 136, 136), 0 0 1em rgb(19, 191, 197), 0 0 0.2em rgb(36, 176, 241);
+}
+.box-11 .h-text .right-text h4, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-1 .h-text .right-text h4,
+.box-33 .h-text .right-text h4,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-3 .h-text .right-text h4,
+.box-55 .h-text .right-text h4,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-5 .h-text .right-text h4 {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(29, 46, 202);
+  margin-bottom: 1rem;
+}
+.box-11 .h-text .right-text p, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-1 .h-text .right-text p,
+.box-33 .h-text .right-text p,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-3 .h-text .right-text p,
+.box-55 .h-text .right-text p,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-5 .h-text .right-text p {
+  text-shadow: 1px 1px 1px rgb(145, 141, 141);
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgb(49, 48, 48);
+  /*   line-height: 80px;
+  z-index: 100; */
+  text-align: start;
+}
+.box-11 .h-text .right-text a, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-1 .h-text .right-text a,
+.box-33 .h-text .right-text a,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-3 .h-text .right-text a,
+.box-55 .h-text .right-text a,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-5 .h-text .right-text a {
+  text-transform: capitalize;
+  float: right;
+  margin-top: 1rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(29, 46, 202);
+}
+
+.box-22, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2,
+.box-44,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+  padding: 4rem;
+  background-color: aliceblue;
+  position: relative;
+}
+.box-22 .h-left-img, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .h-left-img,
+.box-44 .h-left-img,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-4 .h-left-img {
+  width: 55vw;
+  height: 70vh;
+  padding-right: 100px;
+}
+.box-22 .h-left-img img, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .h-left-img img,
+.box-44 .h-left-img img,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-4 .h-left-img img {
+  width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.box-22 .h-left-img img, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .h-left-img img,
+.box-44 .h-left-img img,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-4 .h-left-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.box-22 .h-text, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .h-text,
+.box-44 .h-text,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-4 .h-text {
+  width: 50vw;
+  height: 100%;
+}
+.box-22 .h-text .left-text, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .h-text .left-text,
+.box-44 .h-text .left-text,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-4 .h-text .left-text {
+  position: absolute;
+  top: 70px;
+  right: 48%;
+  width: 35%;
+  height: 30vh;
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 1px 1px 2px rgb(139, 136, 136), 0 0 1em rgb(19, 191, 197), 0 0 0.2em rgb(36, 176, 241);
+}
+.box-22 .h-text .left-text h4, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .h-text .left-text h4,
+.box-44 .h-text .left-text h4,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-4 .h-text .left-text h4 {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(29, 46, 202);
+  margin-bottom: 1rem;
+}
+.box-22 .h-text .left-text p, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .h-text .left-text p,
+.box-44 .h-text .left-text p,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-4 .h-text .left-text p {
+  text-shadow: 1px 1px 1px rgb(145, 141, 141);
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgb(49, 48, 48);
+  /*   line-height: 80px;
+  z-index: 100; */
+  text-align: start;
+}
+.box-22 .h-text .left-text a, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .h-text .left-text a,
+.box-44 .h-text .left-text a,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-4 .h-text .left-text a {
+  text-transform: capitalize;
+  float: right;
+  margin-top: 1rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(29, 46, 202);
+}
+.box-22 .h-text .left-text h4, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .h-text .left-text h4,
+.box-44 .h-text .left-text h4,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-4 .h-text .left-text h4 {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(29, 46, 202);
+  margin-bottom: 1rem;
+}
+.box-22 .h-text .left-text p, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .h-text .left-text p,
+.box-44 .h-text .left-text p,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-4 .h-text .left-text p {
+  text-shadow: 1px 1px 1px rgb(145, 141, 141);
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgb(49, 48, 48);
+  /*   line-height: 80px;
+  z-index: 100; */
+  text-align: start;
+}
+.box-22 .h-text .left-text a, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .h-text .left-text a,
+.box-44 .h-text .left-text a,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-4 .h-text .left-text a {
+  text-transform: capitalize;
+  float: right;
+  margin-top: 1rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(29, 46, 202);
 }
 
 header {
@@ -624,11 +830,12 @@ header nav ul li a {
 .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper {
   width: 100%;
   height: 90vh;
-  position: absolute;
-  background-image: url("/image/m-food-4.png");
+  padding: 1rem;
+  background-image: url("/image/r-1.png");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
+  position: absolute;
   top: 100px;
   left: 0;
 }
@@ -638,20 +845,22 @@ header nav ul li a {
   height: 45vh;
   width: 100%;
   margin-top: 23vh;
+  padding: 0 4rem;
 }
 .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silder-flexbox-box .silder-title {
   width: 30%;
   height: 100%;
-  padding: 6rem 0.3rem;
+  padding: 6rem 0.2rem;
   border: 10px solid #fff;
+  background: linear-gradient(357deg, rgba(185, 230, 244, 0.6460959384) 3%, rgba(29, 46, 202, 0.9962359944) 87%);
   border-radius: 15px;
 }
 .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silder-flexbox-box .silder-title h1 {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   font-size: 2rem;
   font-weight: 700;
-  color: rgb(29, 46, 202);
-  text-shadow: 1px 3px 2px rgb(145, 141, 141);
+  color: #fff;
+  text-shadow: 1px 3px 2px rgb(14, 13, 13);
   padding-left: 100px;
 }
 .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silder-flexbox-box .silder-title h1 .sm {
@@ -660,22 +869,61 @@ header nav ul li a {
   font-weight: 300;
   color: #fff;
   padding-left: 100px;
+  text-shadow: 1px 3px 2px rgb(14, 13, 13);
 }
 .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silder-flexbox-box .silder-title h1 .bold {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   font-size: 3.5rem;
   font-weight: bold;
-  color: rgb(29, 46, 202);
+  color: #fff;
   padding-left: 150px;
-  text-shadow: 1px 3px 2px rgb(145, 141, 141);
+  text-shadow: 1px 3px 2px rgb(14, 13, 13);
 }
 .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silde-out-wrapper {
   width: 70%;
   position: relative;
 }
-.hero .scrool-part .trip-best {
-  height: 50vh;
-  background: #ccc926;
+.hero .scrool-part .hotel-best {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(180deg, rgba(29, 46, 202, 0.8925945378) 10%, rgba(173, 225, 241, 0.6460959384) 84%);
+  padding-top: 100px;
+}
+.hero .scrool-part .hotel-best .hotel-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.hero .scrool-part .hotel-best .hotel-container .center-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  text-align: center;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+.hero .scrool-part .hotel-best .hotel-container .center-box {
+  width: 20%;
+  height: 200px;
+  background-color: #fff;
+  margin-inline: auto;
+  border-radius: 15px;
+  position: relative;
+  padding: 3rem 4rem;
+}
+.hero .scrool-part .hotel-best .hotel-container .center-box h1 {
+  text-align: center;
+}
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box {
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 10rem;
+}
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box {
+  padding: 0 5rem;
+  position: relative;
 }
 .hero .scrool-part .place {
   height: 100vh;
