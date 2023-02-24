@@ -171,8 +171,19 @@ html {
   justify-content: center;
   align-items: center;
   padding: 4rem;
-  background-color: aliceblue;
   position: relative;
+}
+.box-11 .hotel-ovl, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-1 .hotel-ovl,
+.box-33 .hotel-ovl,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-3 .hotel-ovl,
+.box-55 .hotel-ovl,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-5 .hotel-ovl {
+  width: 100%;
+  height: 100%;
+  background-color: #ade1f1;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .box-11 .h-img, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-1 .h-img,
 .box-33 .h-img,
@@ -180,8 +191,9 @@ html {
 .box-55 .h-img,
 .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-5 .h-img {
   width: 55vw;
-  height: 70vh;
+  height: 65vh;
   padding-left: 100px;
+  position: relative;
 }
 .box-11 .h-img img, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-1 .h-img img,
 .box-33 .h-img img,
@@ -211,8 +223,9 @@ html {
   left: 48%;
   width: 35%;
   height: 30vh;
-  background: #fff;
+  background-color: #fff;
   padding: 2rem;
+  z-index: 10;
   box-shadow: 1px 1px 2px rgb(139, 136, 136), 0 0 1em rgb(19, 191, 197), 0 0 0.2em rgb(36, 176, 241);
 }
 .box-11 .h-text .right-text h4, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-1 .h-text .right-text h4,
@@ -261,14 +274,24 @@ html {
   align-items: center;
   margin: 5rem 0;
   padding: 4rem;
-  background-color: aliceblue;
   position: relative;
+}
+.box-22 .hotel-ovl, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .hotel-ovl,
+.box-44 .hotel-ovl,
+.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-4 .hotel-ovl {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .box-22 .h-left-img, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .h-left-img,
 .box-44 .h-left-img,
 .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-4 .h-left-img {
-  width: 55vw;
-  height: 70vh;
+  width: 60vw;
+  height: 85vh;
+  position: relative;
   padding-right: 100px;
 }
 .box-22 .h-left-img img, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .h-left-img img,
@@ -303,6 +326,7 @@ html {
   height: 30vh;
   background: #fff;
   padding: 2rem;
+  z-index: 10;
   box-shadow: 1px 1px 2px rgb(139, 136, 136), 0 0 1em rgb(19, 191, 197), 0 0 0.2em rgb(36, 176, 241);
 }
 .box-22 .h-text .left-text h4, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .h-text .left-text h4,
@@ -336,36 +360,42 @@ html {
   font-weight: 700;
   color: rgb(29, 46, 202);
 }
-.box-22 .h-text .left-text h4, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .h-text .left-text h4,
-.box-44 .h-text .left-text h4,
-.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-4 .h-text .left-text h4 {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: rgb(29, 46, 202);
-  margin-bottom: 1rem;
+
+.footer, .hero .scrool-part footer {
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(29, 46, 202);
 }
-.box-22 .h-text .left-text p, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .h-text .left-text p,
-.box-44 .h-text .left-text p,
-.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-4 .h-text .left-text p {
+.footer .footer-container, .hero .scrool-part footer .footer-container {
+  width: 80%;
+  margin-inline: auto;
+  padding: 5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.footer .footer-container ul, .hero .scrool-part footer .footer-container ul {
+  margin-bottom: 10px;
+}
+.footer .footer-container ul li, .hero .scrool-part footer .footer-container ul li {
   text-shadow: 1px 1px 1px rgb(145, 141, 141);
   font-size: 1.2rem;
   font-weight: 300;
-  color: rgb(49, 48, 48);
+  color: #fff;
   /*   line-height: 80px;
   z-index: 100; */
-  text-align: start;
+  margin-bottom: 15px;
 }
-.box-22 .h-text .left-text a, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .h-text .left-text a,
-.box-44 .h-text .left-text a,
-.hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-4 .h-text .left-text a {
-  text-transform: capitalize;
-  float: right;
-  margin-top: 1rem;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  font-size: 1.2rem;
+.footer .footer-container ul li:first-child, .hero .scrool-part footer .footer-container ul li:first-child {
+  text-shadow: 1px 1px 1px rgb(145, 141, 141);
+  font-size: 2rem;
   font-weight: 700;
-  color: rgb(29, 46, 202);
+  color: #fff;
+  /*   line-height: 80px;
+  z-index: 100; */
+  margin-bottom: 20px;
 }
 
 header {
@@ -886,7 +916,7 @@ header nav ul li a {
 .hero .scrool-part .hotel-best {
   width: 100%;
   height: auto;
-  background: linear-gradient(180deg, rgba(29, 46, 202, 0.8925945378) 10%, rgba(173, 225, 241, 0.6460959384) 84%);
+  background: linear-gradient(180deg, rgba(29, 46, 202, 0.8925945378) 10%, rgba(190, 239, 242, 0.3463760504) 94%);
   padding-top: 100px;
 }
 .hero .scrool-part .hotel-best .hotel-container {
@@ -924,9 +954,4 @@ header nav ul li a {
 .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box {
   padding: 0 5rem;
   position: relative;
-}
-.hero .scrool-part .place {
-  height: 100vh;
-  border: 1px solid red;
-  background: pink;
 }/*# sourceMappingURL=about.css.map */

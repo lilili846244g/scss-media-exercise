@@ -6,6 +6,7 @@
 @import "img-wrapper.scss";
 @import "silder-wrapper.scss";
 @import "_hotel.scss";
+@import "footer.scss";
 header {
   position: fixed;
   top: 0;
@@ -442,10 +443,8 @@ header {
         }
       }
     }
-    .place {
-      height: 100vh;
-      border: c.$border;
-      background: pink;
+    footer {
+      @extend .footer;
     }
   }
 }

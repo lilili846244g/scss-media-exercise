@@ -1,0 +1,23 @@
+.footer {
+  width: 100%;
+  height: 50vh;
+  background-color: c.$main;
+  .footer-container {
+    width: 80%;
+    margin-inline: auto;
+    padding: 5rem 3rem;
+    @include d-flex(space-between, row);
+    flex-wrap: wrap;
+    ul {
+      margin-bottom: 10px;
+      li {
+        @include p-title(f.$sm, f.$fl, c.$title);
+        margin-bottom: 15px;
+        &:first-child {
+          @include p-title(f.$md, f.$fsb, c.$title);
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

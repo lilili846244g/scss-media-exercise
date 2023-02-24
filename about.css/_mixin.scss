@@ -33,6 +33,10 @@
     0 0 0.2em rgb(36, 176, 241);
 }
 
+@mixin text-shadow {
+  box-shadow: 1px 1px 2px c.$main;
+}
+
 @mixin card {
   width: 26vw;
   height: 400px;
