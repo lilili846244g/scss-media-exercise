@@ -179,6 +179,7 @@ header {
           height: 90vh;
           display: flex;
           justify-content: space-between;
+          overflow: hidden;
           .box-left {
             @include box-left;
             .card-trip {
@@ -256,6 +257,7 @@ header {
       padding: 15rem 0;
       position: relative;
       background-color: c.$main;
+      overflow: hidden;
       .center-line {
         @include line;
       }

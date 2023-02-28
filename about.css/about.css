@@ -172,6 +172,7 @@ html {
   align-items: center;
   padding: 4rem;
   position: relative;
+  overflow: hidden;
 }
 .box-11 .hotel-ovl, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-1 .hotel-ovl,
 .box-33 .hotel-ovl,
@@ -276,6 +277,7 @@ html {
   margin: 5rem 0;
   padding: 4rem;
   position: relative;
+  overflow: hidden;
 }
 .box-22 .hotel-ovl, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .hotel-ovl,
 .box-44 .hotel-ovl,
@@ -672,6 +674,7 @@ header nav ul li a {
   height: 90vh;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 .hero .scrool-part .box-container .big-box .flex-box .box-left {
   padding: 1rem;
@@ -761,6 +764,7 @@ header nav ul li a {
   padding: 15rem 0;
   position: relative;
   background-color: rgb(29, 46, 202);
+  overflow: hidden;
 }
 .hero .scrool-part .guidelinr-part .center-line {
   position: absolute;
