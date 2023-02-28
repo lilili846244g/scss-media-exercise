@@ -19,7 +19,6 @@ let wrapperAnimation = gsap.timeline({
   scrollTrigger: {
     trigger: ".scale-part",
     pin: true,
-
     start: "top top",
     end: () => "+=" + innerHeight * wrapper.length,
     scrub: 4,
@@ -218,7 +217,7 @@ hotels.forEach((hotel) => {
 const textBoxs = gsap.utils.toArray(".box-move");
 textBoxs.forEach((textBox) => {
   gsap.to(textBox, 1.5, {
-    y: "30",
+    y: "24vh",
     ease: Power2.easeInOut,
     scrollTrigger: {
       trigger: textBox,
