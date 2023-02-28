@@ -59,9 +59,11 @@ html {
 .img-wrapper, .hero .scrool-part .scale-part #wrapper-6, .hero .scrool-part .scale-part #wrapper-5, .hero .scrool-part .scale-part #wrapper-4, .hero .scrool-part .scale-part #wrapper-3, .hero .scrool-part .scale-part #wrapper-2, .hero .scrool-part .scale-part #wrapper-1 {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   margin: 0 auto;
   border-radius: 15px;
   box-shadow: 1px 1px 2px rgb(139, 136, 136), 0 0 1em rgb(19, 191, 197), 0 0 0.2em rgb(36, 176, 241);
@@ -136,6 +138,12 @@ html {
   transform: rotate(-90deg) translateY(-21vw);
   transform-origin: right top;
   border-radius: 15px;
+}
+@media (max-width: 960px) {
+  .silde-wrapper, .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silde-out-wrapper .silde-wrapper {
+    width: calc(21vw + 30px);
+    max-height: 91vw;
+  }
 }
 .silde-wrapper .silder-img-box, .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silde-out-wrapper .silde-wrapper .silder-img-box {
   display: block;
@@ -229,6 +237,24 @@ html {
   padding: 2rem;
   z-index: 10;
   box-shadow: 1px 1px 2px rgb(139, 136, 136), 0 0 1em rgb(19, 191, 197), 0 0 0.2em rgb(36, 176, 241);
+}
+@media (max-width: 1200px) {
+  .box-11 .h-text .right-text, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-1 .h-text .right-text,
+  .box-33 .h-text .right-text,
+  .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-3 .h-text .right-text,
+  .box-55 .h-text .right-text,
+  .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-5 .h-text .right-text {
+    width: 42%;
+  }
+}
+@media (max-width: 1200px) {
+  .box-11 .h-text .right-text, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-1 .h-text .right-text,
+  .box-33 .h-text .right-text,
+  .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-3 .h-text .right-text,
+  .box-55 .h-text .right-text,
+  .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-5 .h-text .right-text {
+    height: 40vh;
+  }
 }
 .box-11 .h-text .right-text h4, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-1 .h-text .right-text h4,
 .box-33 .h-text .right-text h4,
@@ -332,6 +358,13 @@ html {
   z-index: 10;
   border-radius: 15px;
   box-shadow: 1px 1px 2px rgb(139, 136, 136), 0 0 1em rgb(19, 191, 197), 0 0 0.2em rgb(36, 176, 241);
+}
+@media (max-width: 1200px) {
+  .box-22 .h-text .left-text, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .h-text .left-text,
+  .box-44 .h-text .left-text,
+  .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-4 .h-text .left-text {
+    width: 42%;
+  }
 }
 .box-22 .h-text .left-text h4, .hero .scrool-part .hotel-best .hotel-container .hotel-out-box .hotel-in-box .h-box-2 .h-text .left-text h4,
 .box-44 .h-text .left-text h4,
@@ -683,10 +716,22 @@ header nav ul li a {
   /*   border: c.$border; */
 }
 .hero .scrool-part .box-container .big-box .flex-box .box-left .card-trip {
-  width: 26vw;
+  width: 28vw;
   height: 400px;
   background-color: #fff;
   border-radius: 15px;
+}
+@media (max-width: 1200px) {
+  .hero .scrool-part .box-container .big-box .flex-box .box-left .card-trip {
+    width: 35vw;
+    height: 400px;
+  }
+}
+@media (max-width: 960px) {
+  .hero .scrool-part .box-container .big-box .flex-box .box-left .card-trip {
+    width: 42vw;
+    height: 400px;
+  }
 }
 .hero .scrool-part .box-container .big-box .flex-box .box-left .card-trip .content {
   width: 100%;
@@ -724,10 +769,22 @@ header nav ul li a {
   /*   border: c.$border; */
 }
 .hero .scrool-part .box-container .big-box .flex-box .box-right .card-trip {
-  width: 26vw;
+  width: 28vw;
   height: 400px;
   background-color: #fff;
   border-radius: 15px;
+}
+@media (max-width: 1200px) {
+  .hero .scrool-part .box-container .big-box .flex-box .box-right .card-trip {
+    width: 35vw;
+    height: 400px;
+  }
+}
+@media (max-width: 960px) {
+  .hero .scrool-part .box-container .big-box .flex-box .box-right .card-trip {
+    width: 42vw;
+    height: 400px;
+  }
 }
 .hero .scrool-part .box-container .big-box .flex-box .box-right .card-trip .content {
   width: 100%;
@@ -825,9 +882,10 @@ header nav ul li a {
 }
 .hero .scrool-part .scale-part {
   width: 100%;
-  height: 100vh;
+  height: 100vh !important;
   background-color: rgb(29, 46, 202);
   position: relative;
+  overflow: hidden;
 }
 .hero .scrool-part .scale-part #wrapper-1 {
   z-index: 7;
@@ -889,6 +947,11 @@ header nav ul li a {
   margin-top: 23vh;
   padding: 0 4rem;
 }
+@media (max-width: 1200px) {
+  .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silder-flexbox-box {
+    height: 37vh;
+  }
+}
 .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silder-flexbox-box .silder-title {
   width: 30%;
   height: 100%;
@@ -896,6 +959,11 @@ header nav ul li a {
   border: 10px solid #fff;
   background: linear-gradient(357deg, rgba(185, 230, 244, 0.6460959384) 3%, rgba(29, 46, 202, 0.9962359944) 87%);
   border-radius: 15px;
+}
+@media (max-width: 960px) {
+  .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silder-flexbox-box .silder-title {
+    padding: 3rem 0.2rem;
+  }
 }
 .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silder-flexbox-box .silder-title h1 {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -905,6 +973,15 @@ header nav ul li a {
   text-shadow: 1px 3px 2px rgb(14, 13, 13);
   padding-left: 100px;
 }
+@media (max-width: 1200px) {
+  .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silder-flexbox-box .silder-title h1 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    padding-left: 50px;
+  }
+}
 .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silder-flexbox-box .silder-title h1 .sm {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   font-size: 2.8rem;
@@ -913,6 +990,15 @@ header nav ul li a {
   padding-left: 100px;
   text-shadow: 1px 3px 2px rgb(14, 13, 13);
 }
+@media (max-width: 1200px) {
+  .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silder-flexbox-box .silder-title h1 .sm {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+    padding-left: 50px;
+  }
+}
 .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silder-flexbox-box .silder-title h1 .bold {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   font-size: 3.5rem;
@@ -920,6 +1006,15 @@ header nav ul li a {
   color: #fff;
   padding-left: 150px;
   text-shadow: 1px 3px 2px rgb(14, 13, 13);
+}
+@media (max-width: 1200px) {
+  .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silder-flexbox-box .silder-title h1 .bold {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #fff;
+    padding-left: 50px;
+  }
 }
 .hero .scrool-part .horizontal-silde .silde-container .silde-big-wrapper .silde-out-wrapper {
   width: 70%;

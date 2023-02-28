@@ -19,10 +19,12 @@ let wrapperAnimation = gsap.timeline({
   scrollTrigger: {
     trigger: ".scale-part",
     pin: true,
+
     start: "top top",
     end: () => "+=" + innerHeight * wrapper.length,
     scrub: 4,
-    //markers: true,
+
+    markers: true,
   },
 });
 /* ============== wrapper-1 ============= */
@@ -216,7 +218,7 @@ hotels.forEach((hotel) => {
 const textBoxs = gsap.utils.toArray(".box-move");
 textBoxs.forEach((textBox) => {
   gsap.to(textBox, 1.5, {
-    y: "300px",
+    y: "30",
     ease: Power2.easeInOut,
     scrollTrigger: {
       trigger: textBox,
@@ -428,10 +430,9 @@ let cardAn7 = gsap.timeline({
   },
 });
 
-cardAn7.from(".guidelinr", 0.5, {
-  opacity: 0,
-  x: "-110%",
-  ease: Power2.easeInOut,
+cardAn7.from(".guidelinr", 1, {
+  clipPath: " inset(5% 100% 15% 0)",
+  ease: "power3.out",
 });
 cardAn7.from(".guidelinr h1", 0.5, {
   opacity: 0,
@@ -444,7 +445,7 @@ cardAn7.from(".guidelinr p", 0.5, {
   ease: Power2.easeInOut,
 });
 cardAn7.from(".guidelinr-img", 0.8, {
-  opacity: 0,
   y: -20,
+  opacity: 0,
   ease: Power2.easeInOut,
 });

@@ -38,10 +38,18 @@
 }
 
 @mixin card {
-  width: 26vw;
+  width: 28vw;
   height: 400px;
   background-color: c.$bkg;
   border-radius: c.$r15;
+  @include xl {
+    width: 35vw;
+    height: 400px;
+  }
+  @include lg {
+    width: 42vw;
+    height: 400px;
+  }
 }
 
 @mixin center-card {

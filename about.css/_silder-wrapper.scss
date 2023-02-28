@@ -26,6 +26,10 @@ $scrollBarHeight: 30px;
   transform: rotate(-90deg) translateY(-$finalHeight);
   transform-origin: right top;
   border-radius: c.$r15;
+  @include lg {
+    width: calc(21vw + 30px);
+    max-height: 91vw;
+  }
   .silder-img-box {
     display: block;
     transform: rotate(90deg);

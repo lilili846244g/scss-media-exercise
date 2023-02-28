@@ -38,6 +38,12 @@
       padding: 2rem;
       z-index: 10;
       @include box-shadow;
+      @include xl {
+        width: 42%;
+      }
+      @include xl {
+        height: 40vh;
+      }
       h4 {
         @include h1-title(1.5rem, f.$fsb, c.$main);
         margin-bottom: 1rem;
@@ -101,6 +107,9 @@
       z-index: 10;
       border-radius: c.$r15;
       @include box-shadow;
+      @include xl {
+        width: 42%;
+      }
       h4 {
         @include h1-title(1.5rem, f.$fsb, c.$main);
         margin-bottom: 1rem;
