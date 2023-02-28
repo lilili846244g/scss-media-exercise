@@ -267,7 +267,7 @@ let cardAn2 = gsap.timeline({
     start: "top 95%",
     end: "bottom bottom",
     scrub: 4,
-    markers: true,
+    // markers: true,
   },
 });
 
