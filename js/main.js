@@ -448,3 +448,12 @@ cardAn7.from(".guidelinr-img", 0.8, {
   opacity: 0,
   ease: Power2.easeInOut,
 });
+
+/********* car *****************/
+const car = gsap.timeline();
+car.to("#mask", {
+  xPercent: -100,
+  duration: 2,
+  yoyo: true,
+  repeat: 1,
+});

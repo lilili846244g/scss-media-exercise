@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./contact/contact.css" />
+  </head>
+
+  <body>
+    <div class="website-content">
+      <div class="navbar">
+        <div class="logo">
+          Chiara <br />
+          Luzzana
+        </div>
+        <div class="menu-icon">Menu</div>
+      </div>
+      <div class="site-header">
+        <div class="row">
+          <div class="header-row"><span> the</span>purity</div>
+          <div class="header-row-wrapper"></div>
+        </div>
+        <div class="row">
+          <div class="header-row"><span> of</span>noise</div>
+          <div class="header-row-wrapper"></div>
+        </div>
+      </div>
+
+      <div class="footer">"Everyday life is her sound"</div>
+    </div>
+
+    <div class="pre-loader">
+      <div class="pre-loader-container">
+        <div class="pre-loader-header">
+          <div class="header concat">
+            <h1>A creator of</h1>
+            <div class="header-wrapper"></div>
+          </div>
+          <div class="header">
+            <h1 data-text="sound">sound</h1>
+            &nbsp;&nbsp;
+            <h1>From pure</h1>
+            <div class="header-wrapper"></div>
+          </div>
+          <div class="header">
+            <h1>noise of melody,</h1>
+            <div class="header-wrapper"></div>
+          </div>
+          <div class="header">
+            <h1>everyday life</h1>
+            <div class="header-wrapper"></div>
+          </div>
+          <div class="header">
+            <h1>is her</h1>
+            &nbsp;&nbsp;
+            <h1 data-text="symphony">symphony</h1>
+            <div class="header-wrapper"></div>
+          </div>
+        </div>
+
+        <div class="pre-loader-btn" onclick="revealSite()">
+          <div class="btn">
+            Click anywhere
+            <img src="./image/icons8-right-arrow-50.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/CSSRulePlugin.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script>
+      const t1 = gsap.timeline();
+
+      function revealSite() {
+        t1.to(".pre-loader", 1, {
+          opacity: 0,
+          display: "none",
+          ease: "power2.inOut",
+        });
+        t1.to(
+          ".header-row",
+          0.8,
+          {
+            top: "0",
+            ease: "power4.inOut",
+            stagger: {
+              amount: 0.2,
+            },
+          },
+          "-=2"
+        );
+        t1.from(
+          ".navbar > * ,.footer",
+          2,
+          {
+            y: 40,
+            opacity: 0,
+
+            ease: "power4.inOut",
+            stagger: {
+              amount: 0.2,
+            },
+          },
+          "-=1"
+        );
+      }
+
+      var h1Before = CSSRulePlugin.getRule("span:before");
+      t1.set(h1Before, {
+        CSSRule: {
+          width: 0,
+        },
+      });
+      t1.to(h1Before, 1, {
+        CSSRule: {
+          width: 100,
+        },
+        ease: "power3.inOut",
+      });
+
+      t1.to(".header > h1", 2, {
+        top: "-26px",
+        ease: "power3.inOut",
+        stagger: {
+          amount: 0.2,
+        },
+      });
+
+      t1.to(".pre-loader-btn ", 0.3, {
+        opacity: 1,
+        delay: 2,
+      });
+    </script>
+  </body>
+</html>
