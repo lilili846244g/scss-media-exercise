@@ -44,6 +44,17 @@ body {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: -0.4vw;
+  /*       .header-row-wrapper {
+
+    content: "";
+    position: absolute;
+    top: 140px;
+    left: -20px;
+    width: 110%;
+    height: 150px;
+    background-color: #e5e3dc;
+    margin: 0 auto;
+  } */
 }
 .website-content .site-header .row:nth-child(1) {
   width: 80%;
@@ -62,16 +73,6 @@ body {
   line-height: 75%;
   top: 150px;
   transition: 1s;
-}
-.website-content .site-header .row .header-row-wrapper {
-  content: "";
-  position: absolute;
-  top: 140px;
-  left: -20px;
-  width: 110%;
-  height: 150px;
-  background-color: #e5e3dc;
-  margin: 0 auto;
 }
 .website-content .site-header .row span {
   text-transform: lowercase;
