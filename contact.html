@@ -39,9 +39,7 @@
             <div class="header-wrapper"></div>
           </div>
           <div class="header">
-            <h1 data-text="sound">sound</h1>
-            &nbsp;&nbsp;
-            <h1>From pure</h1>
+            <h1 data-text="sound">sound From pure</h1>
             <div class="header-wrapper"></div>
           </div>
           <div class="header">
@@ -53,9 +51,11 @@
             <div class="header-wrapper"></div>
           </div>
           <div class="header">
-            <h1>is her</h1>
-            &nbsp;&nbsp;
-            <h1 data-text="symphony">symphony</h1>
+            <h1>
+              is her
+
+              <span data-text="symphony">symphony </span>
+            </h1>
             <div class="header-wrapper"></div>
           </div>
         </div>
@@ -63,7 +63,8 @@
         <div class="pre-loader-btn" onclick="revealSite()">
           <div class="btn">
             Click anywhere
-            <img src="./image/icons8-right-arrow-50.png" alt="" />
+            <img src="./image/icons8-right-arrow-50.png" alt="" /> to enable the
+            sound
           </div>
         </div>
       </div>
@@ -121,7 +122,7 @@
       });
 
       t1.to(".header > h1", 2, {
-        top: "-26px",
+        top: "0",
         ease: "power3.inOut",
         stagger: {
           amount: 0.2,

@@ -40,7 +40,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 12vw;
+  font-size: 8vw;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: -0.4vw;
@@ -110,6 +110,7 @@ body {
   width: -moz-max-content;
   width: max-content;
   margin: 0 auto;
+  overflow: hidden;
 }
 .pre-loader .pre-loader-container .header h1 {
   position: relative;
@@ -118,7 +119,7 @@ body {
   text-align: center;
   font-family: "Roslinad Display Condensed";
   font-weight: 500;
-  font-size: 4vw;
+  font-size: 5vw;
   line-height: 90%;
   color: #0a0a0a;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
@@ -129,7 +130,7 @@ body {
   color: #e5e3dc;
   overflow: hidden;
   width: 0%;
-  top: 0;
+  top: 100px;
   left: 0;
   transition: 1s;
 }
@@ -137,18 +138,22 @@ body {
   display: flex;
 }
 
-.header-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 120px;
-  left: -20px;
-  width: 110%;
-  height: 120px;
-  background: #0a0a0a;
-  margin: 0 auto;
-}
-
+/* .header-wrapper {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 102px;
+    left: -20px;
+    width: 110%;
+    height: 120px;
+    background: #bd2828;
+    margin: 0 auto;
+  }
+} */
 .pre-loader-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   margin: 3em 0 1em 0;
   font-family: "Neue Monteral";
@@ -160,6 +165,7 @@ body {
 .pre-loader-btn img {
   position: relative;
   width: 80px;
-  top: 0;
+  height: 20px;
+  top: 5px;
   padding: 0 0.4em;
 }/*# sourceMappingURL=contact.css.map */
